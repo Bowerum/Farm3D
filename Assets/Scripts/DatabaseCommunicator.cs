@@ -49,8 +49,8 @@ public class DatabaseCommunicator : MonoBehaviour
         builder.Server = "server134.hosting.reg.ru";
         builder.Port = 3306;
         builder.Database = "u2596281_Farm";
-        builder.UserID = "u2596281_admFarm";
-        builder.Password = "waq-i9B-RrX-M24";
+        builder.UserID = "";
+        builder.Password = "";
 
         _connection = new MySqlConnection(builder.ToString());
 
@@ -250,12 +250,12 @@ public class DatabaseCommunicator : MonoBehaviour
             }
             else
             {
-                return "Введён неверный пароль";
+                return "Г‚ГўГҐГ¤ВёГ­ Г­ГҐГўГҐГ°Г­Г»Г© ГЇГ Г°Г®Г«Гј";
             }
         }
         else
         {
-            return "Такого пользователя не существует";
+            return "Г’Г ГЄГ®ГЈГ® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї Г­ГҐ Г±ГіГ№ГҐГ±ГІГўГіГҐГІ";
         }
     }
     public static bool CheckUser()
